@@ -74,6 +74,7 @@ File file;
             }
         });
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/ayuda.png"))); // NOI18N
         jButton1.setText("Seleccionar Archivo");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,8 +82,10 @@ File file;
             }
         });
 
+        jXButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/1416856421_Log Out.png"))); // NOI18N
         jXButton1.setText("Cancelar");
 
+        jXButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/1417212535_Forward.png"))); // NOI18N
         jXButton2.setText("Enviar");
         jXButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,10 +93,13 @@ File file;
             }
         });
 
+        jXLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/1417212387_mail-16.png"))); // NOI18N
         jXLabel1.setText("Para");
 
+        jXLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/marca4.png"))); // NOI18N
         jXLabel5.setText("Asunto");
 
+        jXLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/1416818849_internet-group-chat.png"))); // NOI18N
         jXLabel6.setText("Mesaje");
 
         jXLabel7.setText("Archivo");
@@ -107,6 +113,8 @@ File file;
 
         jXBusyLabel1.setText("ENVIANDO...!!!");
 
+        jXLabel2.setForeground(new java.awt.Color(102, 102, 102));
+        jXLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/1417212528_Forward.png"))); // NOI18N
         jXLabel2.setText("Envio de Email");
         jXLabel2.setFont(new java.awt.Font("Tahoma", 2, 36)); // NOI18N
 
@@ -117,7 +125,7 @@ File file;
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 331, Short.MAX_VALUE)
+                        .addGap(39, 311, Short.MAX_VALUE)
                         .addComponent(jXButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(25, 25, 25)
@@ -153,10 +161,10 @@ File file;
                                 .addComponent(jXLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jXLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(95, 95, 95))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addComponent(jXLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
