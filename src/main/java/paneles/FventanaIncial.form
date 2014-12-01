@@ -474,6 +474,7 @@
                   <SubComponents>
                     <Container class="org.jdesktop.swingx.JXTaskPane" name="taskPaneProducto">
                       <Properties>
+                        <Property name="collapsed" type="boolean" value="true"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/iconos/1415658077_database.png"/>
                         </Property>

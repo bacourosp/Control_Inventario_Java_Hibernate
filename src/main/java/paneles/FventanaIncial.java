@@ -265,6 +265,7 @@ public class FventanaIncial extends javax.swing.JFrame {
         taskPaneModuloFacturacion.setTitle("Facturación");
         taskPaneModuloFacturacion.setName("taskPaneModuloFacturacion"); // NOI18N
 
+        taskPaneProducto.setCollapsed(true);
         taskPaneProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/1415658077_database.png"))); // NOI18N
         taskPaneProducto.setSpecial(true);
         taskPaneProducto.setTitle("Productos");
@@ -569,7 +570,7 @@ public class FventanaIncial extends javax.swing.JFrame {
 
     private void jButtonTomaFisicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTomaFisicaActionPerformed
 
-        addPaneles(tabTomaFisica, TomaFisicaInventarioDistribuidora.class);
+        addPaneles(tabTomaFisica, Distribuidora1.class);
 
     }//GEN-LAST:event_jButtonTomaFisicaActionPerformed
 
