@@ -158,8 +158,6 @@ public abstract class JavaUtil {
                 EntradaProveedor ep = (EntradaProveedor) o;
                 oneRow.add(ep.getIdProducto().getIdProducto());
                 oneRow.add(ep.getIdProducto().getDescripcion());
-//                oneRow.add("algo");
-//                oneRow.add("algo2");
                 oneRow.add(ep.getCantidadSet());
                 oneRow.add(ep.getCantidadProducto());
                 oneRow.add(ep.getCantidadSet() * ep.getCantidadProducto());

@@ -31,7 +31,7 @@ import java.util.Calendar;
  *
  * @author Pablo
  */
-public class Distribuidora1 extends javax.swing.JPanel {
+public class Distribuidora2 extends javax.swing.JPanel {
 
     Usuario user = JFInicioSecionMiyake.us1;
     Usuario ususrioActual = null;
@@ -57,7 +57,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
     /**
      * Creates new form NewJPanel
      */
-    public Distribuidora1() {
+    public Distribuidora2() {
         initComponents();
         //ComboBoxAlmacenes
         this.jTDetalleRegistroDistribuidora.setModel(modeloTablaTomaFisicaInventarioDistribuidora);
@@ -82,9 +82,9 @@ public class Distribuidora1 extends javax.swing.JPanel {
             @Override
             public void run() {
                 try {
-                    new Distribuidora1().setVisible(true);
+                    new Distribuidora2().setVisible(true);
                 } catch (Exception ex) {
-                    Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, ex);
                 }
 
             }
@@ -103,28 +103,10 @@ public class Distribuidora1 extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        busy = new org.jdesktop.swingx.JXBusyLabel();
-        jXTaskPane1 = new org.jdesktop.swingx.JXTaskPane();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jLayeredPaneTienda = new javax.swing.JLayeredPane();
-        jXLabel2 = new org.jdesktop.swingx.JXLabel();
-        botonConfirmarFactura = new org.jdesktop.swingx.JXButton();
-        jXLabel1 = new org.jdesktop.swingx.JXLabel();
-        comboBoxAlmacen = new javax.swing.JComboBox();
-        comboBoxUsuarios = new javax.swing.JComboBox();
-        botonCancelarTodoDesdeFActura = new org.jdesktop.swingx.JXButton();
-        jButtonListarFacturas = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        txtEmitidoPor = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        txtFactura = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jXLabel10 = new org.jdesktop.swingx.JXLabel();
-        txtFechaFactura = new org.jdesktop.swingx.JXTextField();
         jXTaskPane2 = new org.jdesktop.swingx.JXTaskPane();
-        jXLabel11 = new org.jdesktop.swingx.JXLabel();
-        fecha_actual = new org.jdesktop.swingx.JXLabel();
-        jXTaskPane4 = new org.jdesktop.swingx.JXTaskPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jLayeredPanePrincipal = new javax.swing.JLayeredPane();
+        jScrollPane4 = new javax.swing.JScrollPane();
         jLayeredPaneProductos = new javax.swing.JLayeredPane();
         jLayeredPaneBuscarProducto = new javax.swing.JLayeredPane();
         jXLabel7 = new org.jdesktop.swingx.JXLabel();
@@ -154,200 +136,40 @@ public class Distribuidora1 extends javax.swing.JPanel {
         jScrollPane5 = new javax.swing.JScrollPane();
         jTDetalleRegistroDistribuidora = new javax.swing.JTable();
         jButtonGuardarConteo = new org.jdesktop.swingx.JXButton();
+        busy = new org.jdesktop.swingx.JXBusyLabel();
+        jXTaskPane1 = new org.jdesktop.swingx.JXTaskPane();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jLayeredPaneTienda = new javax.swing.JLayeredPane();
+        jXLabel2 = new org.jdesktop.swingx.JXLabel();
+        botonConfirmarFactura = new org.jdesktop.swingx.JXButton();
+        jXLabel1 = new org.jdesktop.swingx.JXLabel();
+        comboBoxAlmacen = new javax.swing.JComboBox();
+        comboBoxUsuarios = new javax.swing.JComboBox();
+        botonCancelarTodoDesdeFActura = new org.jdesktop.swingx.JXButton();
+        jButtonListarFacturas = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        txtEmitidoPor = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        txtFactura = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jXLabel10 = new org.jdesktop.swingx.JXLabel();
+        txtFechaFactura = new org.jdesktop.swingx.JXTextField();
+        jXLabel11 = new org.jdesktop.swingx.JXLabel();
+        fecha_actual = new org.jdesktop.swingx.JXLabel();
 
-        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
+        setAutoscrolls(true);
 
         jScrollPane1.setBorder(javax.swing.BorderFactory.createTitledBorder("Toma Fisica Distribuidora. "));
 
-        busy.setText("GUARDANDO!!!");
-        busy.setEnabled(false);
-        busy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jXTaskPane2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/1416789183_data-16.png"))); // NOI18N
+        jXTaskPane2.setTitle("Detalles de Toma Fisica Distribuidora");
 
-        jXTaskPane1.setTitle("Datos de Cabecera");
+        jScrollPane2.setAutoscrolls(true);
 
-        jScrollPane3.setPreferredSize(new java.awt.Dimension(800, 800));
-
-        jLayeredPaneTienda.setBorder(javax.swing.BorderFactory.createTitledBorder("Seleccionar Factura"));
-        jLayeredPaneTienda.setPreferredSize(new java.awt.Dimension(610, 110));
-
-        jXLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/responsable1.png"))); // NOI18N
-        jXLabel2.setText("Responsable");
-
-        botonConfirmarFactura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/conect.png"))); // NOI18N
-        botonConfirmarFactura.setText("Confirmar");
-        botonConfirmarFactura.setEnabled(false);
-        botonConfirmarFactura.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonConfirmarFacturaActionPerformed(evt);
-            }
-        });
-
-        jXLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/distribuidora.png"))); // NOI18N
-        jXLabel1.setText("Almacen");
-
-        comboBoxAlmacen.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        comboBoxAlmacen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboBoxAlmacenActionPerformed(evt);
-            }
-        });
-
-        comboBoxUsuarios.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
-        botonCancelarTodoDesdeFActura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/reiniciar.png"))); // NOI18N
-        botonCancelarTodoDesdeFActura.setText("Reiniciar");
-        botonCancelarTodoDesdeFActura.setEnabled(false);
-        botonCancelarTodoDesdeFActura.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonCancelarTodoDesdeFActuraActionPerformed(evt);
-            }
-        });
-
-        jButtonListarFacturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/confirmar.png"))); // NOI18N
-        jButtonListarFacturas.setText("Seleccionar Facturas Pendientes");
-        jButtonListarFacturas.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonListarFacturasActionPerformed(evt);
-            }
-        });
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/facturas.png"))); // NOI18N
-        jLabel2.setText("Factura Pendientes:");
-
-        txtEmitidoPor.setEditable(false);
-        txtEmitidoPor.setEnabled(false);
-        txtEmitidoPor.setMinimumSize(new java.awt.Dimension(40, 22));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/responsable2.png"))); // NOI18N
-        jLabel8.setText("Emitido Por");
-
-        txtFactura.setEditable(false);
-        txtFactura.setEnabled(false);
-        txtFactura.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFacturaActionPerformed(evt);
-            }
-        });
-
-        jLabel9.setText("Numero");
-
-        jXLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/fecha.png"))); // NOI18N
-        jXLabel10.setText("Fecha");
-
-        txtFechaFactura.setEditable(false);
-        txtFechaFactura.setEnabled(false);
-
-        javax.swing.GroupLayout jLayeredPaneTiendaLayout = new javax.swing.GroupLayout(jLayeredPaneTienda);
-        jLayeredPaneTienda.setLayout(jLayeredPaneTiendaLayout);
-        jLayeredPaneTiendaLayout.setHorizontalGroup(
-            jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
-                        .addComponent(jXLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(comboBoxAlmacen, 0, 316, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jXLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(comboBoxUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPaneTiendaLayout.createSequentialGroup()
-                        .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButtonListarFacturas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
-                                .addComponent(jLabel9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtFactura, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtEmitidoPor, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jXLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtFechaFactura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGap(44, 44, 44)
-                        .addComponent(jXTaskPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botonCancelarTodoDesdeFActura, javax.swing.GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE)
-                            .addComponent(botonConfirmarFactura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap())
-        );
-        jLayeredPaneTiendaLayout.setVerticalGroup(
-            jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
-                .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jXLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(comboBoxAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(comboBoxUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jXLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
-                        .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
-                                .addGap(8, 8, 8)
-                                .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jButtonListarFacturas)
-                                    .addComponent(jLabel2)))
-                            .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(botonConfirmarFactura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(botonCancelarTodoDesdeFActura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel9)
-                            .addComponent(txtFactura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8)
-                            .addComponent(txtEmitidoPor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jXLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtFechaFactura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jXTaskPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(25, 25, 25))
-        );
-        jLayeredPaneTienda.setLayer(jXLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(botonConfirmarFactura, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(jXLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(comboBoxAlmacen, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(comboBoxUsuarios, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(botonCancelarTodoDesdeFActura, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(jButtonListarFacturas, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(txtEmitidoPor, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(txtFactura, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(jXLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(txtFechaFactura, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPaneTienda.setLayer(jXTaskPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        jScrollPane3.setViewportView(jLayeredPaneTienda);
-
-        javax.swing.GroupLayout jXTaskPane1Layout = new javax.swing.GroupLayout(jXTaskPane1.getContentPane());
-        jXTaskPane1.getContentPane().setLayout(jXTaskPane1Layout);
-        jXTaskPane1Layout.setHorizontalGroup(
-            jXTaskPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jXTaskPane1Layout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jXTaskPane1Layout.setVerticalGroup(
-            jXTaskPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-
-        jXLabel11.setText("Fecha:");
-
-        fecha_actual.setText("actual");
+        jScrollPane4.setAutoscrolls(true);
 
         jLayeredPaneProductos.setBorder(javax.swing.BorderFactory.createTitledBorder("Productos"));
+        jLayeredPaneProductos.setAutoscrolls(true);
 
         jLayeredPaneBuscarProducto.setBorder(javax.swing.BorderFactory.createTitledBorder("Buscar"));
 
@@ -538,7 +360,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPaneDatosProductosLayout.createSequentialGroup()
                         .addComponent(labelReferencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtReferencia, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtReferencia, javax.swing.GroupLayout.DEFAULT_SIZE, 94, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jXLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -661,11 +483,11 @@ public class Distribuidora1 extends javax.swing.JPanel {
         jLayeredPaneProductosLayout.setVerticalGroup(
             jLayeredPaneProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jLayeredPaneProductosLayout.createSequentialGroup()
-                .addComponent(jLayeredPaneBuscarProducto)
+                .addComponent(jLayeredPaneBuscarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLayeredPaneDatosProductos)
+                .addComponent(jLayeredPaneDatosProductos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 95, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonGuardarConteo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -675,26 +497,226 @@ public class Distribuidora1 extends javax.swing.JPanel {
         jLayeredPaneProductos.setLayer(jScrollPane5, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPaneProductos.setLayer(jButtonGuardarConteo, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jXTaskPane4.getContentPane().add(jLayeredPaneProductos);
+        jScrollPane4.setViewportView(jLayeredPaneProductos);
+
+        javax.swing.GroupLayout jLayeredPanePrincipalLayout = new javax.swing.GroupLayout(jLayeredPanePrincipal);
+        jLayeredPanePrincipal.setLayout(jLayeredPanePrincipalLayout);
+        jLayeredPanePrincipalLayout.setHorizontalGroup(
+            jLayeredPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPanePrincipalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 679, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jLayeredPanePrincipalLayout.setVerticalGroup(
+            jLayeredPanePrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPanePrincipalLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 563, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jLayeredPanePrincipal.setLayer(jScrollPane4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jScrollPane2.setViewportView(jLayeredPanePrincipal);
+
+        jXTaskPane2.getContentPane().add(jScrollPane2);
+
+        busy.setText("GUARDANDO!!!");
+        busy.setEnabled(false);
+        busy.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        jXTaskPane1.setTitle("Datos de Cabecera");
+
+        jScrollPane3.setPreferredSize(new java.awt.Dimension(800, 800));
+
+        jLayeredPaneTienda.setBorder(javax.swing.BorderFactory.createTitledBorder("Seleccionar Factura"));
+        jLayeredPaneTienda.setPreferredSize(new java.awt.Dimension(610, 110));
+
+        jXLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/responsable1.png"))); // NOI18N
+        jXLabel2.setText("Responsable");
+
+        botonConfirmarFactura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/conect.png"))); // NOI18N
+        botonConfirmarFactura.setText("Confirmar");
+        botonConfirmarFactura.setEnabled(false);
+        botonConfirmarFactura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonConfirmarFacturaActionPerformed(evt);
+            }
+        });
+
+        jXLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/distribuidora.png"))); // NOI18N
+        jXLabel1.setText("Almacen");
+
+        comboBoxAlmacen.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboBoxAlmacen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBoxAlmacenActionPerformed(evt);
+            }
+        });
+
+        comboBoxUsuarios.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        botonCancelarTodoDesdeFActura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/reiniciar.png"))); // NOI18N
+        botonCancelarTodoDesdeFActura.setText("Reiniciar");
+        botonCancelarTodoDesdeFActura.setEnabled(false);
+        botonCancelarTodoDesdeFActura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCancelarTodoDesdeFActuraActionPerformed(evt);
+            }
+        });
+
+        jButtonListarFacturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/confirmar.png"))); // NOI18N
+        jButtonListarFacturas.setText("Seleccionar Facturas Pendientes");
+        jButtonListarFacturas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonListarFacturasActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/facturas.png"))); // NOI18N
+        jLabel2.setText("Factura Pendientes:");
+
+        txtEmitidoPor.setEditable(false);
+        txtEmitidoPor.setEnabled(false);
+        txtEmitidoPor.setMinimumSize(new java.awt.Dimension(40, 22));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/responsable2.png"))); // NOI18N
+        jLabel8.setText("Emitido Por");
+
+        txtFactura.setEditable(false);
+        txtFactura.setEnabled(false);
+        txtFactura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFacturaActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setText("Numero");
+
+        jXLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon_almacen/fecha.png"))); // NOI18N
+        jXLabel10.setText("Fecha");
+
+        txtFechaFactura.setEditable(false);
+        txtFechaFactura.setEnabled(false);
+
+        javax.swing.GroupLayout jLayeredPaneTiendaLayout = new javax.swing.GroupLayout(jLayeredPaneTienda);
+        jLayeredPaneTienda.setLayout(jLayeredPaneTiendaLayout);
+        jLayeredPaneTiendaLayout.setHorizontalGroup(
+            jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
+                        .addComponent(jXLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(comboBoxAlmacen, 0, 316, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jXLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(comboBoxUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPaneTiendaLayout.createSequentialGroup()
+                        .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButtonListarFacturas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
+                                .addComponent(jLabel9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtFactura, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtEmitidoPor, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jXLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtFechaFactura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(botonCancelarTodoDesdeFActura, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+                            .addComponent(botonConfirmarFactura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap())
+        );
+        jLayeredPaneTiendaLayout.setVerticalGroup(
+            jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
+                .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jXLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(comboBoxAlmacen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboBoxUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jXLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButtonListarFacturas)
+                            .addComponent(jLabel2)))
+                    .addGroup(jLayeredPaneTiendaLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonConfirmarFactura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jLayeredPaneTiendaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(botonCancelarTodoDesdeFActura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel9)
+                    .addComponent(txtFactura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8)
+                    .addComponent(txtEmitidoPor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jXLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtFechaFactura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(25, 25, 25))
+        );
+        jLayeredPaneTienda.setLayer(jXLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(botonConfirmarFactura, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(jXLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(comboBoxAlmacen, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(comboBoxUsuarios, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(botonCancelarTodoDesdeFActura, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(jButtonListarFacturas, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(txtEmitidoPor, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(txtFactura, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(jXLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPaneTienda.setLayer(txtFechaFactura, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jScrollPane3.setViewportView(jLayeredPaneTienda);
+
+        javax.swing.GroupLayout jXTaskPane1Layout = new javax.swing.GroupLayout(jXTaskPane1.getContentPane());
+        jXTaskPane1.getContentPane().setLayout(jXTaskPane1Layout);
+        jXTaskPane1Layout.setHorizontalGroup(
+            jXTaskPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jXTaskPane1Layout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 713, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jXTaskPane1Layout.setVerticalGroup(
+            jXTaskPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jXLabel11.setText("Fecha:");
+
+        fecha_actual.setText("actual");
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
         jLayeredPane1.setLayout(jLayeredPane1Layout);
         jLayeredPane1Layout.setHorizontalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jXTaskPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jLayeredPane1Layout.createSequentialGroup()
-                                .addComponent(jXLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(fecha_actual, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(busy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jXTaskPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 749, Short.MAX_VALUE))
+            .addComponent(jXTaskPane2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jXTaskPane1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPane1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jXLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(fecha_actual, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(busy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -702,23 +724,37 @@ public class Distribuidora1 extends javax.swing.JPanel {
                 .addGroup(jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jXLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(fecha_actual, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addGap(8, 8, 8)
                 .addComponent(jXTaskPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(busy, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(9, 9, 9)
-                .addComponent(jXTaskPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(401, 401, 401))
+                .addGap(2, 2, 2)
+                .addComponent(jXTaskPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 859, Short.MAX_VALUE))
         );
+        jLayeredPane1.setLayer(jXTaskPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(busy, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jXTaskPane1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(jXLabel11, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jLayeredPane1.setLayer(fecha_actual, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane1.setLayer(jXTaskPane4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jScrollPane1.setViewportView(jLayeredPane1);
 
-        add(jScrollPane1);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 781, Short.MAX_VALUE)
+                .addGap(12, 12, 12))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1119, Short.MAX_VALUE)
+                .addContainerGap())
+        );
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonConfirmarFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonConfirmarFacturaActionPerformed
@@ -747,9 +783,21 @@ public class Distribuidora1 extends javax.swing.JPanel {
             this.botonConfirmarFactura.setEnabled(false);
             this.botonCancelarTodoDesdeFActura.setEnabled(true);
         } catch (Exception e) {
-            Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, e);
 
         }
+
+//            this.jPanelProductos.setEnabled(true);
+//            this.jButtonListarProductos.setEnabled(true);
+//            this.txtBucarProducto.setEnabled(true);
+//            this.jButtonBuscarProducto.setEnabled(true);
+//            this.jButtonConfirmarFactura.setEnabled(false);
+
+//            this.jPanelProductos.setEnabled(true);
+//            this.jButtonListarProductos.setEnabled(true);
+//            this.txtBucarProducto.setEnabled(true);
+//            this.jButtonBuscarProducto.setEnabled(true);
+//            this.jButtonConfirmarFactura.setEnabled(false);
 
 //            this.jPanelProductos.setEnabled(true);
 //            this.jButtonListarProductos.setEnabled(true);
@@ -807,7 +855,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
 
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this, "Error al cargar Lista de Facturas" + ex);
-            Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, ex);
 
         }
 
@@ -922,7 +970,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
 
         } catch (HeadlessException | NumberFormatException e) {
 
-            Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, e);
             JOptionPane.showMessageDialog(null, "Por Favor, Seleccione El Tipo de Busqueda Correcto!!!");
             System.err.println("ERROR en la Busqueda : " + e);
         }
@@ -1021,7 +1069,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
                                     System.err.println("Actualizando Inventario de Producto Existente");
                                 }
                             } catch (Exception e) {
-                                Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, e);
+                                Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, e);
                                 JOptionPane.showMessageDialog(null, "Por Favor, Vuelva a Intentar Guardar con Datos Correctos del Inventario!!!");
                                 System.err.println("ERROR GUARDANDO EN INVENTARIO : " + e);
                             }
@@ -1098,7 +1146,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
                     System.err.println("Excepcion en Guardar Registro : " + ex);
 
                 } catch (Throwable ex) {
-                    Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, ex);
                     JOptionPane.showMessageDialog(null, "Por Favor, Vuelva a Intentar Guardar con Datos Correctos!!!");
                     System.err.println("ERROR ó Excepcion en Guardar Registro : " + ex);
                 }
@@ -1144,7 +1192,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
 
                 } catch (Exception ex) {
 
-                    Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, ex);
                     JOptionPane.showMessageDialog(null, "No se Encontraron Listas Para Mostrar de Facturas Pendientes");
                     System.err.println("ERROR ó Excepcion en Guardar Registro : " + ex);
                 }
@@ -1179,7 +1227,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
                 }
             }
         } catch (Exception e) {
-            Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, e);
             JOptionPane.showMessageDialog(null, "Por Favor, Seleccione Una Celda Validad Para Eliminar");
             System.err.println("ERROR ó Excepcion Eliminando Celda de La Tabla : " + e);
         }
@@ -1233,7 +1281,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
 
             }
         } catch (Exception e) {
-            Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, e);
             JOptionPane.showMessageDialog(null, "Por Favor, Seleccione Una Factura Valida Para Continuar.!!!");
             System.err.println("ERROR ó Excepcion Boton Reiniciar Todo Desde FActura : " + e);
         }
@@ -1306,7 +1354,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
                 }
             }
         } catch (NumberFormatException | HeadlessException e) {
-            Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, e);
             JOptionPane.showMessageDialog(null, "Por Favor, Introduzca Datos Validos Para Continuar.!!!");
             System.err.println("ERROR ó Excepcion Boton Validar Cantidad : " + e);
 
@@ -1329,7 +1377,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
                 this.txtNroBulto.setText("");
             }
         } catch (Exception e) {
-            Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, e);
             JOptionPane.showMessageDialog(null, "Por Favor, Introduzca Datos Validos Para Continuar.!!!");
             System.err.println("ERROR ó Excepcion Boton Limpiar Cantidades y Datos de Producto : " + e);
 
@@ -1376,7 +1424,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
 
             }
         } catch (NumberFormatException | HeadlessException e) {
-            Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, e);
+            Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, e);
             JOptionPane.showMessageDialog(null, "Por Favor, Introduzca Datos Validos Para Continuar.!!!");
             System.err.println("ERROR ó Excepcion Boton Validar Cantidad : " + e);
 
@@ -1441,7 +1489,7 @@ public class Distribuidora1 extends javax.swing.JPanel {
 
         } catch (HeadlessException | NumberFormatException ex) {
 
-            Logger.getLogger(Distribuidora1.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Distribuidora2.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Por Favor, Introduzca Los Datos Correcto Para Agragar!!!");
             System.err.println("ERROR AGREGARNDO PRODUCTO EN LA TABLA Y LISTA : " + ex);
 
@@ -1470,10 +1518,13 @@ public class Distribuidora1 extends javax.swing.JPanel {
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JLayeredPane jLayeredPaneBuscarProducto;
     private javax.swing.JLayeredPane jLayeredPaneDatosProductos;
+    private javax.swing.JLayeredPane jLayeredPanePrincipal;
     private javax.swing.JLayeredPane jLayeredPaneProductos;
     private javax.swing.JLayeredPane jLayeredPaneTienda;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTable jTDetalleRegistroDistribuidora;
@@ -1491,7 +1542,6 @@ public class Distribuidora1 extends javax.swing.JPanel {
     private org.jdesktop.swingx.JXLabel jXLabel9;
     private org.jdesktop.swingx.JXTaskPane jXTaskPane1;
     private org.jdesktop.swingx.JXTaskPane jXTaskPane2;
-    private org.jdesktop.swingx.JXTaskPane jXTaskPane4;
     private org.jdesktop.swingx.JXLabel labelReferencia;
     private org.jdesktop.swingx.JXTextField txtBusqueda;
     private org.jdesktop.swingx.JXTextField txtCantidad;
