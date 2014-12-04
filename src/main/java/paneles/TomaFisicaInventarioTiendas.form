@@ -18,7 +18,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane2" pref="702" max="32767" attributes="0"/>
+              <Component id="jScrollPane2" pref="757" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -27,7 +27,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane2" pref="838" max="32767" attributes="0"/>
+              <Component id="jScrollPane2" pref="890" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -57,7 +57,7 @@
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane4" pref="686" max="32767" attributes="0"/>
+                          <Component id="jScrollPane4" pref="738" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Component id="jScrollPane3" pref="0" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -79,7 +79,7 @@
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Component id="busy" max="32767" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="jScrollPane4" pref="617" max="32767" attributes="0"/>
+                      <Component id="jScrollPane4" pref="660" max="32767" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -116,7 +116,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jXLabel1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                                      <Component id="comboBoxAlmacen" pref="297" max="32767" attributes="0"/>
+                                      <Component id="comboBoxAlmacen" pref="307" max="32767" attributes="0"/>
                                       <EmptySpace min="-2" max="-2" attributes="0"/>
                                       <Component id="jXLabel2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
@@ -145,7 +145,7 @@
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="botonReiniciarTodoDesdeFActura" pref="124" max="32767" attributes="0"/>
+                                          <Component id="botonReiniciarTodoDesdeFActura" max="32767" attributes="0"/>
                                           <Component id="botonConfirmarFactura" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -357,6 +357,7 @@
                                       <Component id="jXButton2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Component id="jButtonGuardarConteo" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="127" max="-2" attributes="0"/>
                                   </Group>
                                   <Component id="jScrollPane5" max="32767" attributes="0"/>
                                   <Component id="jLayeredPaneBuscarProducto" alignment="0" max="32767" attributes="0"/>
@@ -607,7 +608,7 @@
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
-                                  <EmptySpace pref="8" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jXLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
